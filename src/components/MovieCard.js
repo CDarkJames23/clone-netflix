@@ -37,7 +37,7 @@ const MovieCard = (prop) => {
 
         <button>{prop.release_date.slice(0, 4)}</button>
       </div>
-      <button onClick={() => dispatch(removeMovie())}>
+      <button onClick={() => dispatch(removeMovie(prop.id))}>
         remove movie
       </button>
 
